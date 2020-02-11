@@ -1,1 +1,6 @@
 # Pytorch-toolbox
+
+## pytorch_dataloader.py
+pytorchのdataloaderは画像の読み込みの順番が独特。だが、もとの画像のパスがどれだったかは通常のImageFolderでは
+保持できない。そこで、このコードでは、画像をdataloaderで読み込み、path_recordフォルダに同じ画像をもとの画像名を保持しつつ、
+pytorchのデータロード順に番号を割り振って保存。これで、元画像と読み込み画像の対応を知ることができる。
